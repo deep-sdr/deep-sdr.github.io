@@ -47,6 +47,14 @@
             overflow: hidden;
         }
 
+        .description {
+            margin: 10px auto;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            max-width: 800px;
+        }
+
         iframe {
             display: block;
             width: 100%;
@@ -59,12 +67,14 @@
     <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-T3477MPP"
     height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <!-- End Google Tag Manager (noscript) -->
-    <h1>DEEP SDR</h1>
-    <p>Please use the form below to send me a message.</p>
+    <div class='description'>
+        <h1>DEEP SDR</h1>
+        <p class="">Software-defined radio (SDR) combined with a USB receiver is an easy way to make your PC receive radio waves. Since everything happens in software, we can add deep processing (aka AI: LLMs, ML transcription) and make an incident map. I describe a project that does that in my <a href="https://youtu.be/ubU9Mf_zZAM">YouTube video</a>.</p>
+        <p class="">Anyone interested is welcome to join the <a href="https://www.reddit.com/r/DeepSDR/">subreddit</a>.</p>
+        <p class="">If you want to get directly in touch with me, please use the form below.</p>
+    </div>
     <div class="form-container" style="width: 100%; max-width: 530px; margin: 0 auto; padding: 30px; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.05); background: #fff; text-align: left; box-sizing: border-box;">
-        
         <script>var submitted = false;</script>
-        
         <!-- Public form endpoint -->
         <form action="https://docs.google.com/forms/d/e/1FAIpQLSe7dDjfJ8rmVtpevZOMFGnvWwE2iVpmlpXUDHjTTef7jkeYeg/formResponse" 
               method="POST" 
@@ -75,18 +85,12 @@
             <label style="font-weight: 600; color: #444;">Your Email Address</label>
             <input type="email" name="entry.1606593497" placeholder="name@example.com" required pattern="^[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}$" title="Please enter a valid email address (e.g., name@domain.com)." style="width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 6px; box-sizing: border-box; font-size: 1rem;">
             <label style="font-weight: 600; color: #444;">Your Message</label>
-            <textarea name="entry.949074422" placeholder="Type your message here..." required style="width: 100%; height: 120px; padding: 10px; border: 1px solid #ccc; border-radius: 6px; box-sizing: border-box; font-size: 1rem; resize: vertical;"></textarea>
-            
+            <textarea name="entry.949074422" placeholder="Type your message here..." required style="width: 100%; height: 120px; padding: 10px; border: 1px solid #ccc; border-radius: 6px; box-sizing: border-box; font-size: 1rem; resize: vertical;"></textarea>        
             <button type="submit" style="background-color: #111; color: #fff; border: none; padding: 12px; border-radius: 6px; font-weight: bold; font-size: 1rem; cursor: pointer;">
                 Submit Message
             </button>
-    
         </form>
-    
         <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) { alert('Message sent successfully!'); window.location.location.reload(); }"></iframe>
-    
     </div>
-
-
 </body>
 </html>
